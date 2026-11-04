@@ -1,0 +1,16 @@
+Bot dry run Indodax (UAS Algoritma Trading)
+
+Link Vercel : https://<isi-setelah-deploy>
+Repositori  : https://github.com/<username>/<repo>
+
+Commit freeze : 3746eca (2026-11-04 13:28 WIB)
+Forward test  : mulai tick pertama setelah commit freeze, selesai 2026-11-14 12.00 WIB
+
+Cara menjalankan:
+1. python -m venv .venv && .venv\Scripts\activate (opsional)
+2. python selesai.py            # snapshot -> backtest -> dashboard -> cek secret
+3. Deploy ke Vercel (import repo, isi CRON_SECRET + Upstash Redis)
+4. Set secret GitHub Actions: VERCEL_URL dan CRON_SECRET
+5. Setelah forward test: python selesai.py --url https://<app>/api/data
+
+Dokumen: README.md, STRATEGI.md, FREEZE.md, REFLEKSI.md, dashboard.html
