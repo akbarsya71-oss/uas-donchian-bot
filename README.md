@@ -52,7 +52,7 @@ python backtest.py --mulai 2026-10-25 --selesai 2026-11-04 --tanpa-validasi --ou
 python uji_lokal.py
 
 # uji endpoint seperti di Vercel (routing /api/*, POST JSON, secret)
-set STORE=file && set CRON_SECRET=<secret-lokal> && python uji_server.py
+set STORE=file && set CRON_SECRET=<nilai-rahasia-lokal> && python uji_server.py
 #   lalu: curl -H "Authorization: Bearer rahasia-uji" -X POST http://127.0.0.1:8765/api/tick
 
 # bangun dashboard dari log lokal

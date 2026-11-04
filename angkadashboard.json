@@ -2730,10 +2730,10 @@
    "fee_beli": 0.0020555,
    "fee_jual": 0.0041555,
    "spread_median_bps": {
-    "BTCIDR": 14.235,
-    "ETHIDR": 10.657,
+    "BTCIDR": 14.895,
+    "ETHIDR": 9.685,
     "XRPIDR": 3.475,
-    "SOLIDR": 12.825,
+    "SOLIDR": 12.568,
     "DOGEIDR": 14.881
    },
    "slippage_median_bps": {
@@ -2745,27 +2745,27 @@
    },
    "sampel_biaya": {
     "BTCIDR": {
-     "n": 51,
-     "spread_bps": 14.235,
+     "n": 54,
+     "spread_bps": 14.895,
      "slippage_bps": 0.0
     },
     "ETHIDR": {
-     "n": 51,
-     "spread_bps": 10.657,
+     "n": 54,
+     "spread_bps": 9.685,
      "slippage_bps": 0.0
     },
     "XRPIDR": {
-     "n": 51,
+     "n": 54,
      "spread_bps": 3.475,
      "slippage_bps": 0.512
     },
     "SOLIDR": {
-     "n": 52,
-     "spread_bps": 12.825,
+     "n": 55,
+     "spread_bps": 12.568,
      "slippage_bps": 0.0
     },
     "DOGEIDR": {
-     "n": 53,
+     "n": 56,
      "spread_bps": 14.881,
      "slippage_bps": 0.0
     }
