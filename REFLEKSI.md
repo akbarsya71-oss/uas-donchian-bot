@@ -38,8 +38,8 @@ Target 100%: backtest dijalankan ulang pada jendela yang sama dengan candle yang
 | Fee | 0,20555% / 0,41555% (taker all-in) | tarif yang sama di kode | tidak ada selisih fee |
 | Keterlambatan | eksekusi di bar berikutnya | tick 7 menit setelah candle tutup (± keterlambatan GitHub Actions, tercatat di `bot:calls.waktu`) | bertambahnya slippage saat pasar bergerak di 7 menit itu |
 
-Median spread yang dipakai backtest per pasangan: BTC 11,16 · ETH 11,63 · XRP 6,51 ·
-SOL 13,30 · DOGE 14,88 bps (186 snapshot, 4 Nov 2026). Median seluruh snapshot setelah
+Median spread yang dipakai backtest per pasangan: BTC 14.54 · ETH 9.44 · XRP 3.48 ·
+SOL 12.69 · DOGE 14.88 bps (298 snapshot / 61 waktu berbeda, 4 Nov 2026). Median seluruh snapshot setelah
 forward test: … bps (perbandingan wajib di bagian ini).
 
 ## 4. Uptime dan dampaknya

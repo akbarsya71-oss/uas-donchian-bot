@@ -63,8 +63,8 @@ Satu-satunya cara posisi ditutup: stop, trailing stop, atau exit tren.
 | Fee beli (taker all-in IDR) | **0,20555%** | `/api/pairs` → `trade_fee_percent_taker = 0,2%`; halaman resmi "Rincian Biaya Transaksi di INDODAX" (help.indodax.com/hc/id/articles/4416646599705) → IDR BUY Taker 0,20555% (service 0,20% + pajak 0% + CFX 0,00555%), berlaku efektif 1 Okt 2026. Diambil **yang lebih mahal** (0,20555%). Diakses 4 Nov 2026. |
 | Fee jual (taker all-in IDR) | **0,41555%** | halaman resmi yang sama: IDR SELL Taker 0,41555% (0,20% + pajak 0,21% + CFX 0,00555%). Diakses 4 Nov 2026. |
 | Minimum order | **Rp25.000** | Soal & artikel resmi: "transaksi langsung di INDODAX Pro minimum Rp25.000" (`trade_min_base_currency` = 10.000 untuk Lite). Diambil yang lebih ketat. |
-| Spread backtest | **median per pasangan dari snapshot** | BTC 11,16 · ETH 11,63 · XRP 6,51 · SOL 13,30 · DOGE 14,88 bps (186 snapshot, 4 Nov 2026, `data/snapshots.jsonl`) |
-| Slippage backtest | **median per pasangan** (ukur Rp10 juta per order) | 0–4 bps; order bot ≤ 5% ADV sehingga umumnya hanya level terbaik terpakai |
+| Spread backtest | **median per pasangan dari snapshot** | BTC 14.54 · ETH 9.44 · XRP 3.48 · SOL 12.69 · DOGE 14.88 bps (298 snapshot / 61 waktu berbeda, 4 Nov 2026, `data/snapshots.jsonl`) |
+| Slippage backtest | **median per pasangan** (ukur Rp10 juta per order) | 0–0,6 bps; order bot ≤ 5% ADV sehingga umumnya hanya level terbaik terpakai |
 | Fill beli | harga rata-rata level **ask** (boros level) | rule order book, `api/indodax.py:isi_order` |
 | Fill jual | harga rata-rata level **bid** | idem |
 | Mid / close sebagai harga fill | **dilarang** | backtest memakai spread+slippage di atas, bot memakai bid/ask live |
@@ -120,26 +120,26 @@ di atas mengurangi bias dengan mewajibkan data dan likuiditas sejak awal periode
 
 | Metrik | Strategi | Benchmark BTC buy & hold |
 |---|---|---|
-| Return total | **+67,6%** | +220,5% |
-| CAGR | **17,2%** | — |
-| Max drawdown | **−17,2%** | −49,4% |
-| Sharpe / Sortino | 1,23 / 1,73 | — |
-| Jumlah trade | 187 (win 35,3%) | — |
-| Profit factor | **1,82** | — |
-| Rata-rata untung / rugi | Rp2,27 jt / −Rp680 rb | — |
-| Porsi biaya / laba kotor | 3,9% | — |
+| Return total | **+67.4%** | +220.5% |
+| CAGR | **17.1%** | — |
+| Max drawdown | **−17.3%** | −49.4% |
+| Sharpe / Sortino | 1.23 / 1.73 | — |
+| Jumlah trade | 187 (win 35.3%) | — |
+| Profit factor | **1.82** | — |
+| Rata-rata untung / rugi | Rp2.27 jt / −Rp0.68 jt | — |
+| Porsi biaya / laba kotor | 3.9% | — |
 
 Validasi (`hasil_backtest.json` → `validasi`):
 
 | Uji | Hasil |
 |---|---|
-| In-sample / out-of-sample (70/30) | PF IS 2,39 vs OOS 0,45 (rasio 0,19) → **tidak lulus** (OOS 2025-11 s/d 2026-11 lemah) |
+| In-sample / out-of-sample (70/30) | PF IS 2.40 vs OOS 0.44 (rasio 0.18, 49 trade OOS) → **tidak lulus** (OOS 2025-11 s/d 2026-11 lemah) |
 | Walk-forward 5 jendela | 3/5 jendela profit → lulus |
 | Sensitivitas 4×4 parameter | 16/16 variasi CAGR>0 & PF>1 → lulus |
-| Stress delay 1 bar | CAGR 16,96%, PF 1,86 → lulus |
-| Stress biaya 2× | CAGR 13,05%, PF 1,56 → lulus |
+| Stress delay 1 bar | CAGR 16.93%, PF 1.85 → lulus |
+| Stress biaya 2× | CAGR 13.00%, PF 1.56 → lulus |
 | Uji look-ahead (truncation) | 3/3 identik → lulus |
-| Buang 2 pasangan terbaik (XRP, SOL) | CAGR 5,6%, PF 1,51 → lulus (profit ditopang lebih dari dua aset) |
+| Buang 2 pasangan terbaik (XRPIDR, SOLIDR) | CAGR 5.5%, PF 1.51 → lulus (profit ditopang lebih dari dua aset) |
 
 Kesimpulan jujur: strategi **tidak** mengalahkan buy & hold BTC pada periode ini dan
 kinerjanya menurun di tahun terakhir (OOS). Keunggulannya adalah drawdown jauh lebih kecil
@@ -148,7 +148,7 @@ forward test.
 
 ## 10. Jendela forward test & backtest pembanding
 
-* Mulai: **4 Nov 2026 12.00 WIB** (setelah commit freeze), tick pertama setelah freeze.
+* Mulai: tick pertama setelah commit freeze (4 Nov 2026, menjelang 12.00 WIB).
 * Selesai: **14 Nov 2026 12.00 WIB**.
 * `backtest_forward.json` = backtest dengan aturan yang sama pada candle jendela tersebut,
   dipakai untuk membandingkan sinyal candle demi candle.

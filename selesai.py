@@ -34,7 +34,9 @@ def jalankan(*cmd):
 
 
 def cek_secret():
-    pola = ["CRON_SECRET=", "UPSTASH_REDIS_REST_TOKEN=", "ghp_", "sk-", "Bearer ey"]
+    import re
+    pola = [r"CRON_SECRET=[^\s<$`\"]", r"UPSTASH_REDIS_REST_TOKEN=[^\s<$`\"]", r"ghp_[A-Za-z0-9]{20,}",
+            r"sk-[A-Za-z0-9]{20,}", r"Bearer ey[A-Za-z0-9]"]
     temuan = []
     for path in glob.glob(os.path.join(ROOT, "**", "*"), recursive=True):
         if not os.path.isfile(path) or path.endswith((".gz", ".png", ".pdf")):
@@ -50,7 +52,7 @@ def cek_secret():
         except OSError:
             continue
         for p in pola:
-            if p in teks:
+            if re.search(p, teks):
                 temuan.append((os.path.relpath(path, ROOT), p))
     if temuan:
         print("\nPERINGATAN: temuan yang mirip secret:")
