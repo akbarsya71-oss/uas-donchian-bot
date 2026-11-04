@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/tick", "destination": "/api/tick.py" },
+    { "source": "/api/data", "destination": "/api/data.py" },
+    { "source": "/api/kontrol", "destination": "/api/kontrol.py" }
+  ],
+  "functions": {
+    "api/*.py": { "maxDuration": 300 }
+  }
+}

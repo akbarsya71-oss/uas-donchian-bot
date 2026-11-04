@@ -1,0 +1,30 @@
+# Rahasia tidak boleh masuk repo
+.env
+.env.*
+!.env.example
+
+# State lokal & log
+local_state/
+forward/raw/*.jsonl
+forward/raw/*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Vercel
+.vercel
+
+# Data mentah candle besar (bisa ditarik ulang dengan fetch_history.py)
+data/candles_4h.csv.gz
+data/raw_history/
+
+# Log mentah snapshot selama forward test
+data/snapshots.jsonl
+data/fetch_log.json
+
+# OS
+.DS_Store
+Thumbs.db

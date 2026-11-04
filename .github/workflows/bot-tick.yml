@@ -1,0 +1,33 @@
+name: bot-tick
+
+# Penjadwal luar untuk Vercel Hobby (cron bawaan hanya 1x/hari). 
+# Menit ke-7 (bukan 0) sesuai panduan soal agar tidak bentrok dengan beban penjadwal
+# lain. Candle 4 jam Indodax tutup pada 03, 07, 11, 15, 19, 23 WIB = 20, 00, 04, 08,
+# 12, 16 UTC. Tik di menit 7 UTC memberi jeda 3 menit setelah candle tutup.
+on:
+  schedule:
+    - cron: "7 0,4,8,12,16,20 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: bot-tick
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Catat waktu panggilan (dasar angka uptime)
+        run: date -u "+dipanggil %Y-%m-%dT%H:%M:%SZ"
+      - name: Panggil /api/tick
+        env:
+          VERCEL_URL: ${{ secrets.VERCEL_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          curl -sS -m 290 -w "\nHTTP %{http_code} dalam %{time_total}s\n" \
+            -H "Authorization: Bearer $CRON_SECRET" \
+            "$VERCEL_URL/api/tick"
+      - name: Catat selesai
+        if: always()
+        run: date -u "+selesai %Y-%m-%dT%H:%M:%SZ"

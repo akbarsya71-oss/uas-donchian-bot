@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard Bot Dry Run Indodax — UAS Algoritma Trading</title>
+<style>
+:root{--bg:#0e1117;--card:#161b22;--line:#283040;--txt:#e6edf3;--dim:#8b949e;--ok:#3fb950;--bad:#f85149;--acc:#58a6ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{padding:24px 32px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:22px}h2{font-size:16px;margin:0 0 12px;color:var(--acc)}
+.sub{color:var(--dim);margin-top:4px}
+main{padding:24px 32px;max-width:1280px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.kpi .l{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:22px;font-weight:600;margin-top:6px}
+.pos{color:var(--ok)}.neg{color:var(--bad)}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse}th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:top}
+th{color:var(--dim);font-weight:500}.n{text-align:right;font-variant-numeric:tabular-nums}
+.legend{margin-bottom:8px}.legend span{margin-right:14px;color:var(--dim);font-size:12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+small{color:var(--dim)}
+canvas{width:100%;height:280px}
+</style></head><body>
+<header>
+<h1>Bot Dry Run Indodax — Dashboard</h1>
+<div class="sub" id="sub">M Syahrul Akbar · 25110200047 · UAS Algoritma Trading · Donchian Breakout + Filter Tren (4 jam)</div>
+</header><main>
+
+<div class="grid" id="kpi"></div>
+
+<section><h2>Backtest vs forward test (jendela yang sama)</h2>
+<div id="banding">memuat...</div></section>
+
+<section><h2>Ekuitas forward test</h2>
+<div class="legend"><span><i style="background:#58a6ff"></i>Bot (equity harian WIB)</span>
+<span><i style="background:#8b949e"></i>BTC buy &amp; hold</span>
+<span><i style="background:#3fb950"></i>Backtest jendela sama</span></div>
+<canvas id="eq" width="1200" height="280"></canvas></section>
+
+<section><h2>Metrik forward test</h2><div id="metrik">memuat...</div></section>
+<section><h2>Posisi terbuka</h2><div id="posisi">memuat...</div></section>
+<section><h2>Order simulasi</h2><div id="order">memuat...</div></section>
+<section><h2>Equity harian</h2><div id="equity">memuat...</div></section>
+<section><h2>Panel operasional</h2><div id="ops">memuat...</div></section>
+<section><h2>Error &amp; peristiwa</h2><div id="err">memuat...</div></section>
+<section><h2>Sumber angka</h2>
+<small>Semua tabel di halaman ini dihitung di browser dari <code>/api/data</code> (log mentah bot).
+Versi offline (file HTML mandiri) dibuat oleh <code>hitung_ulang.py</code> dari hasil
+<code>ekspor_log.py</code>. Keduanya memakai rumus yang sama di bagian bawah berkas ini.</small></section>
+</main>
+<script>
+const RUPIAH = new Intl.NumberFormat('id-ID',{maximumFractionDigits:0});
+const pct=(x,d=2)=>x==null?'-':(x*100).toFixed(d).replace('.',',')+'%';
+const rp=(x,r=true)=>{if(x==null)return '-';if(r&&Math.abs(x)>=1e9)return 'Rp'+(x/1e9).toFixed(2).replace('.',',')+' M';
+ if(r&&Math.abs(x)>=1e6)return 'Rp'+(x/1e6).toFixed(2).replace('.',',')+' jt';return 'Rp'+RUPIAH.format(x);};
+const wib=ts=>{if(!ts)return '';const d=new Date((ts<1e12?ts*1000:ts)+7*3600e3);return d.toISOString().slice(0,16).replace('T',' ')};
+const el=id=>document.getElementById(id);
+
+function metrik(trades, eq){
+  const w=trades.filter(t=>t.pnl>0), l=trades.filter(t=>t.pnl<=0);
+  const sw=w.reduce((a,t)=>a+t.pnl,0), sl=-l.reduce((a,t)=>a+t.pnl,0);
+  // trade dihitung per posisi yang ditutup (kombinasikan potongan take profit bila ada)
+  const out={n:trades.length,win_rate:trades.length?w.length/trades.length:0,
+    pf: sl? sw/sl : (sw?99:0), avg_win:w.length?sw/w.length:0, avg_loss:l.length?-sl/l.length:0,
+    laba_kotor:sw, total_pnl:trades.reduce((a,t)=>a+t.pnl,0)};
+  if(eq&&eq.length>1){const v0=eq[0][1],v1=eq[eq.length-1][1];out.return_total=v1/v0-1;out.ekuitas_akhir=v1;
+    let pk=0,dd=0;for(const [,v] of eq){pk=Math.max(pk,v);dd=Math.min(dd,v/pk-1);}out.max_dd=dd;}
+  return out;
+}
+
+async function muat(){
+  let d;
+  try{ const r=await fetch('/api/data',{cache:'no-store'}); d=await r.json(); }
+  catch(e){ el('sub').textContent='Tidak bisa memuat /api/data: '+e; return; }
+  if(!d.ok){ el('sub').textContent='API error: '+d.error; return; }
+  render(d);
+}
+
+function render(d){
+  const calls=d.calls||[], orders=d.orders||[], trades=d.trades||[], sig=d.signals||[], errs=d.errors||[];
+  const modal=100000000;
+  const bar=sig.map(s=>s.bar_time).filter(x=>typeof x==='number');
+  const barmin=bar.length?Math.min(...bar):null, barmax=bar.length?Math.max(...bar):null;
+  const proses=calls.filter(c=>typeof c.bar_time==='number'&&c.sukses&&!c.idempoten&&!c.dihentikan);
+  const awal=proses.length?Math.min(...proses.map(c=>c.bar_time)):barmin;
+  const akhir=proses.length?Math.max(...proses.map(c=>c.bar_time)):barmax;
+  const eq=[...(awal?[[awal-4*3600e3,modal]]:[])];
+  for(const e of (d.equity||[])) if(!awal||(e.ts>awal-4*3600e3)) eq.push([e.ts,e.ekuitas]);
+  const akhirEq=proses.length?proses[proses.length-1].ekuitas:null;
+  if(akhirEq!=null&&(eq.length===1||eq[eq.length-1][1]!==akhirEq)) eq.push([akhir+4*3600e3,akhirEq]);
+  const m=metrik(trades,eq);
+  const fee=orders.reduce((a,o)=>a+(o.fee||0),0);
+  const spread=orders.reduce((a,o)=>a+Math.abs((o.harga_fill||0)-(o.harga_sinyal||0))*(o.qty||0)/2,0);
+  m.fee_total=fee; m.porsi_biaya=m.laba_kotor?(fee+spread)/m.laba_kotor:0;
+
+  const btc=sig.filter(s=>s.pair==='BTCIDR'&&s.bar_time>=(awal||-1e9)&&s.bar_time<=(akhir||1e18)).sort((a,b)=>a.bar_time-b.bar_time);
+  let bench={};
+  if(btc.length>1){const c0=btc[0].close,c1=btc[btc.length-1].close;let pk=0,dd=0;
+    btc.forEach(s=>{const v=s.close/c0;pk=Math.max(pk,v);dd=Math.min(dd,v/pk-1)});
+    bench={return_total:c1/c0-1,max_dd:dd,kurva:btc.map(s=>[wib(s.bar_time),s.close/c0])};}
+
+  const st=d.state||{}, pos=st.posisi||{};
+
+  el('sub').textContent=`M Syahrul Akbar · 25110200047 · UAS Algoritma Trading · periode ${wib(awal)} → ${wib(akhir)} WIB · dibuat ${new Date().toISOString().slice(0,16)}Z`;
+
+  const kpi=(l,v,cls,sub)=>`<div class="kpi"><div class="l">${l}</div><div class="v ${cls||''}">${v}</div><small>${sub||''}</small></div>`;
+  el('kpi').innerHTML=[
+    kpi('Forward: return total',pct(m.return_total),m.return_total>=0?'pos':'neg','from ekuitas harian'),
+    kpi('Forward: max drawdown',pct(m.max_dd),'neg',''),
+    kpi('Ekuitas akhir',rp(m.ekuitas_akhir),'','posisi di best bid'),
+    kpi('Panggilan / error',`${calls.length} / ${errs.length}`,'',`kill switch: ${errs.filter(e=>e.jenis==='kill_switch').length}x`),
+    kpi('Benchmark BTC buy &amp; hold',pct(bench.return_total),bench.return_total>=0?'pos':'neg',`max DD ${pct(bench.max_dd)}`),
+    kpi('Trade',m.n,'',`PF ${m.pf.toFixed(2)} · WR ${pct(m.win_rate,1)}`),
+  ].join('');
+
+  el('metrik').innerHTML=`<table><tr><th>Trade</th><th>Win rate</th><th>Profit factor</th><th>Rata-rata untung</th><th>Rata-rata rugi</th><th>Porsi biaya / laba kotor</th><th>Fee total</th></tr>
+    <tr><td class=n>${m.n}</td><td class=n>${pct(m.win_rate,1)}</td><td class=n>${m.pf.toFixed(2)}</td>
+    <td class=n>${rp(m.avg_win,false)}</td><td class=n>${rp(m.avg_loss,false)}</td><td class=n>${pct(m.porsi_biaya)}</td><td class=n>${rp(fee,false)}</td></tr></table>`;
+
+  el('posisi').innerHTML=`<table><tr><th>Pair</th><th>Qty</th><th>Harga masuk</th><th>Stop</th><th>Harga terakhir</th></tr>
+    ${Object.entries(pos).map(([k,v])=>`<tr><td>${k}</td><td class=n>${v.qty}</td><td class=n>${v.harga_masuk?.toLocaleString('id-ID')}</td><td class=n>${v.stop?.toLocaleString('id-ID')}</td><td class=n>${v.harga_terakhir?.toLocaleString('id-ID')}</td></tr>`).join('')||'<tr><td colspan=5>tidak ada posisi</td></tr>'}</table>
+    <small>Kas ${rp(st.cash)} · ekuitas ${rp(st.ekuitas_terakhir)} · beku: ${st.beku}</small>`;
+
+  el('order').innerHTML=`<table><tr><th>Waktu</th><th>Pair</th><th>Sisi</th><th>Qty</th><th>Harga fill</th><th>Harga sinyal</th><th>Slip bps</th><th>Fee</th><th>Alasan</th></tr>
+    ${orders.slice(-100).reverse().map(o=>`<tr><td>${o.waktu||wib(o.ts)}</td><td>${o.pair}</td><td>${o.sisi}</td><td class=n>${o.qty}</td>
+    <td class=n>${(o.harga_fill||0).toLocaleString('id-ID')}</td><td class=n>${(o.harga_sinyal||0).toLocaleString('id-ID')}</td>
+    <td class=n>${(o.slippage_bps||0).toFixed(1)}</td><td class=n>${rp(o.fee,false)}</td><td>${o.alasan||''}</td></tr>`).join('')||'<tr><td colspan=9>belum ada order</td></tr>'}</table>`;
+
+  el('equity').innerHTML=`<table><tr><th>Hari</th><th>Ekuitas</th><th>Kas</th><th>Nilai posisi</th></tr>
+    ${(d.equity||[]).map(e=>`<tr><td>${e.hari}</td><td class=n>${rp(e.ekuitas)}</td><td class=n>${rp(e.cash)}</td><td class=n>${rp(e.nilai_posisi)}</td></tr>`).join('')||'<tr><td colspan=4>belum ada</td></tr>'}</table>`;
+
+  const status={};
+  calls.forEach(c=>{const s=c.idempoten?'idempoten':c.dihentikan?'kill_switch':c.sukses?'diproses':'gagal';status[s]=(status[s]||0)+1});
+  el('ops').innerHTML=`<table><tr><th>Waktu panggil</th><th>Candle</th><th>Status</th><th>Order</th><th>Ekuitas</th><th>Durasi</th><th>Catatan</th></tr>
+    ${calls.slice(-60).reverse().map(c=>{const s=c.idempoten?'idempoten':c.dihentikan?'kill switch':c.sukses?'diproses':'gagal';
+      return `<tr><td>${c.waktu||wib(c.ts)}</td><td>${wib(c.bar_time)}</td><td>${s}</td><td class=n>${c.order??'-'}</td>
+      <td class=n>${rp(c.ekuitas)}</td><td class=n>${c.durasi_ms??''} ms</td><td>${c.catatan||''}</td></tr>`}).join('')}</table>
+    <small>Ringkasan status: ${JSON.stringify(status)}</small>`;
+
+  el('err').innerHTML=`<table><tr><th>Waktu</th><th>Jenis</th><th>Pair</th><th>Pesan</th></tr>
+    ${errs.slice(-60).reverse().map(e=>`<tr><td>${e.waktu||wib(e.ts)}</td><td>${e.jenis}</td><td>${e.pair||''}</td><td>${e.pesan||''}</td></tr>`).join('')||'<tr><td colspan=4>tidak ada error</td></tr>'}</table>`;
+
+  el('banding').innerHTML=`<table><tr><th>Metrik</th><th>Backtest (candle sama)</th><th>Forward test</th></tr>
+    <tr><td>Return total</td><td>lihat dashboard.html offline (backtest_forward.json)</td><td>${pct(m.return_total)}</td></tr>
+    <tr><td>Maximum drawdown</td><td>-</td><td>${pct(m.max_dd)}</td></tr>
+    <tr><td>Jumlah trade</td><td>-</td><td>${m.n}</td></tr>
+    <tr><td>Win rate</td><td>-</td><td>${pct(m.win_rate,1)}</td></tr>
+    <tr><td>Profit factor</td><td>-</td><td>${m.pf.toFixed(2)}</td></tr>
+    <tr><td>Rata-rata untung / rugi</td><td>-</td><td>${rp(m.avg_win,false)} / ${rp(m.avg_loss,false)}</td></tr>
+    <tr><td>Porsi biaya / laba kotor</td><td>-</td><td>${pct(m.porsi_biaya)}</td></tr></table>
+    <small>Perbandingan lengkap (termasuk backtest per sekali-jalan) ada di dashboard.html offline.</small>`;
+
+  gambar(eq,bench.kurva||[],modal);
+}
+
+function gambar(EQ,BM,modal){
+  const c=el('eq'), ctx=c.getContext('2d'), W=c.width,H=c.height,P=44;
+  const s1=EQ.map(p=>p[1]), s2=BM.map(p=>p[1]*modal);
+  if(s1.length<2&&s2.length<2){ctx.fillStyle='#8b949e';ctx.fillText('belum ada data ekuitas',P,H/2);return;}
+  const all=[...s1,...s2], lo=Math.min(...all), hi=Math.max(...all)+1;
+  const n=Math.max(s1.length,s2.length)-1, X=i=>P+(W-P-10)*i/Math.max(n,1), Y=v=>H-P+(lo-v)*(H-2*P)/(hi-lo);
+  ctx.clearRect(0,0,W,H);ctx.font='11px system-ui';
+  for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4;ctx.strokeStyle='#283040';ctx.beginPath();ctx.moveTo(P,Y(v));ctx.lineTo(W-10,Y(v));ctx.stroke();
+    ctx.fillStyle='#8b949e';ctx.fillText((v/1e6).toFixed(1)+' jt',4,Y(v)+4);}
+  const line=(s,col)=>{if(s.length<2)return;ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();
+    s.forEach((v,i)=>{i?ctx.lineTo(X(i),Y(v)):ctx.moveTo(X(i),Y(v))});ctx.stroke();};
+  line(s2,'#8b949e');line(s1,'#58a6ff');
+}
+muat();
+setInterval(muat, 5*60e3);
+</script></body></html>

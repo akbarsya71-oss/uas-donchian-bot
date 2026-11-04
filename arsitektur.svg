@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380">
+  <rect width="1200" height="380" fill="#0e1117"/>
+  <text x="24" y="38" fill="#e6edf3" font-family="Segoe UI,system-ui,sans-serif" font-size="22" font-weight="600">Bot Dry Run Indodax — Donchian Breakout 4 jam</text>
+  <text x="24" y="64" fill="#8b949e" font-family="Segoe UI,system-ui,sans-serif" font-size="14">1 endpoint /api/tick · penjadwal GitHub Actions (menit ke-7 UTC, tiap 4 jam) · state &amp; log di Upstash Redis</text>
+
+  <!-- jalur -->
+  <g font-family="Segoe UI,system-ui,sans-serif" font-size="12">
+    <rect x="24" y="96" width="132" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="38" y="120" fill="#58a6ff" font-weight="600">Penjadwal</text>
+    <text x="38" y="140" fill="#8b949e">GitHub Actions</text>
+
+    <rect x="188" y="96" width="150" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="202" y="120" fill="#58a6ff" font-weight="600">/api/tick</text>
+    <text x="202" y="140" fill="#8b949e">cek CRON_SECRET</text>
+
+    <rect x="370" y="96" width="190" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="384" y="120" fill="#58a6ff" font-weight="600">Indodax API</text>
+    <text x="384" y="140" fill="#8b949e">server_time · depth · history</text>
+
+    <rect x="592" y="96" width="200" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="606" y="120" fill="#58a6ff" font-weight="600">Validasi data</text>
+    <text x="606" y="140" fill="#8b949e">umur candle · celah · spread</text>
+
+    <rect x="824" y="96" width="210" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="838" y="120" fill="#58a6ff" font-weight="600">strategy.py</text>
+    <text x="838" y="140" fill="#8b949e">sinyal = backtest (sama)</text>
+
+    <rect x="1066" y="96" width="110" height="64" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="1080" y="120" fill="#58a6ff" font-weight="600">Order</text>
+    <text x="1080" y="140" fill="#8b949e">ask / bid</text>
+
+    <g stroke="#58a6ff" stroke-width="1.5" fill="none" marker-end="url(#a)">
+      <line x1="156" y1="128" x2="184" y2="128"/><line x1="338" y1="128" x2="366" y2="128"/>
+      <line x1="560" y1="128" x2="588" y2="128"/><line x1="792" y1="128" x2="820" y2="128"/>
+      <line x1="1034" y1="128" x2="1062" y2="128"/>
+    </g>
+  </g>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#58a6ff"/></marker></defs>
+
+  <!-- log -->
+  <g font-family="Segoe UI,system-ui,sans-serif" font-size="12">
+    <rect x="370" y="210" width="644" height="70" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="386" y="234" fill="#3fb950" font-weight="600">State &amp; log mentah (Upstash Redis)</text>
+    <text x="386" y="254" fill="#8b949e">bot:state · bot:calls · bot:orders · bot:trades · bot:equity · bot:signals · bot:snapshots · bot:error</text>
+    <text x="386" y="270" fill="#8b949e">idempotency: last_bar_time · daily loss limit 3% (WIB) · kill switch</text>
+    <line x1="929" y1="160" x2="929" y2="206" stroke="#58a6ff" stroke-width="1.5"/>
+    <line x1="699" y1="160" x2="699" y2="206" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="706" y="184" fill="#8b949e" font-size="11">order &amp; keputusan</text>
+
+    <rect x="86" y="210" width="240" height="70" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="100" y="234" fill="#3fb950" font-weight="600">ekspor_log.py</text>
+    <text x="100" y="254" fill="#8b949e">/api/data → forward/raw/</text>
+    <text x="100" y="270" fill="#8b949e">(log mentah, CSV/JSONL)</text>
+    <line x1="326" y1="245" x2="366" y2="245" stroke="#8b949e" stroke-width="1.2" marker-end="url(#b)"/>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#8b949e"/></marker>
+
+    <rect x="24" y="310" width="300" height="50" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="38" y="332" fill="#58a6ff" font-weight="600">hitung_ulang.py</text>
+    <text x="38" y="350" fill="#8b949e">dashboard.html · angkadashboard.json</text>
+    <line x1="206" y1="280" x2="174" y2="306" stroke="#8b949e" stroke-width="1.2" marker-end="url(#b)"/>
+
+    <rect x="370" y="310" width="420" height="50" rx="8" fill="#161b22" stroke="#283040"/>
+    <text x="384" y="332" fill="#58a6ff" font-weight="600">cek_kecocokan.py</text>
+    <text x="384" y="350" fill="#8b949e">sinyal bot vs backtest_forward.json per candle</text>
+    <line x1="500" y1="280" x2="500" y2="306" stroke="#8b949e" stroke-width="1.2" marker-end="url(#b)"/>
+  </g>
+</svg>

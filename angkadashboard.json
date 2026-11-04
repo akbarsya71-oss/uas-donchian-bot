@@ -1,0 +1,3371 @@
+{
+ "meta": {
+  "modal": 100000000.0,
+  "bar_candle": 61,
+  "awal": 1712448000000,
+  "akhir": 1793750400000,
+  "state": {
+   "posisi": {},
+   "cash": 0,
+   "ekuitas_terakhir": 99897500.06457298
+  },
+  "universe": [
+   "BTCIDR",
+   "ETHIDR",
+   "XRPIDR",
+   "SOLIDR",
+   "DOGEIDR"
+  ],
+  "jumlah_calls": 63,
+  "status_calls": {
+   "diproses": 62,
+   "kill_switch": 1
+  },
+  "uptime": 0.010802195856206835,
+  "jadwal": {
+   "candle_harapan": 5647,
+   "candle_diproses": 61,
+   "batas_wib": "2026-11-14 23:59 WIB",
+   "langkah_ms": 14400000
+  },
+  "jumlah_error": 1,
+  "error_jenis": {
+   "kill_switch": 1
+  },
+  "kill": {
+   "aktif": false
+  },
+  "kill_dari_log": 1
+ },
+ "forward": {
+  "metrik": {
+   "n": 1,
+   "n_menang": 0,
+   "n_rugi": 1,
+   "win_rate": 0.0,
+   "pf": 0.0,
+   "avg_win": 0.0,
+   "avg_loss": -102499.9354270267,
+   "laba_kotor": 0,
+   "rugi_kotor": -102499.9354270267,
+   "total_pnl": -102499.9354270267,
+   "return_total": 0.0,
+   "max_dd": -0.0032683439382981128,
+   "ekuitas_akhir": 100000000.0,
+   "fee_total": 20554.993183065097,
+   "biaya_total": 24111.210864892888,
+   "porsi_biaya": 0.0
+  },
+  "trades": [
+   {
+    "pair": "BTCIDR",
+    "sisi": "sell",
+    "bar_time": 1712664000000,
+    "waktu": 1712664000,
+    "qty": 0.00894514,
+    "harga_fill": 1113390979.538,
+    "fee": 41386.44538485075,
+    "harga_sinyal": 1113390979.538,
+    "slippage_bps": 0.0,
+    "notional": 9959438.186704546,
+    "alasan": "stop",
+    "pnl": -102499.9354270267,
+    "pnl_pct": -0.010249996942048908,
+    "entry": 1117925117.2775,
+    "bar_masuk": 1712505600000,
+    "fee_masuk": 20554.993183065097,
+    "biaya_spread": 7093.679055453725
+   }
+  ],
+  "orders": [
+   {
+    "pair": "BTCIDR",
+    "sisi": "buy",
+    "bar_time": 1712505600000,
+    "waktu": 1712505600,
+    "qty": 0.00894514,
+    "harga_fill": 1117925117.2775,
+    "fee": 20554.993183065097,
+    "harga_sinyal": 1117130000.0,
+    "slippage_bps": 7.11750000000011,
+    "notional": 9999996.683563657,
+    "alasan": "breakout"
+   }
+  ],
+  "ekuitas": [
+   [
+    "2024-04-07 03:00",
+    100000000
+   ],
+   [
+    "2024-04-07 07:07",
+    100000000
+   ],
+   [
+    "2024-04-08 03:07",
+    99913161
+   ],
+   [
+    "2024-04-09 03:07",
+    100225070
+   ],
+   [
+    "2024-04-10 03:07",
+    99897500
+   ],
+   [
+    "2024-04-11 03:07",
+    99897500
+   ],
+   [
+    "2024-04-12 03:07",
+    99897500
+   ],
+   [
+    "2024-04-13 03:07",
+    99897500
+   ],
+   [
+    "2024-04-14 03:07",
+    99897500
+   ],
+   [
+    "2024-04-15 03:07",
+    99897500
+   ],
+   [
+    "2024-04-16 03:07",
+    99897500
+   ],
+   [
+    "2024-04-17 03:07",
+    99897500
+   ],
+   [
+    "2026-11-04 12:21",
+    100000000
+   ]
+  ],
+  "equity_harian": [
+   {
+    "hari": "2024-04-07",
+    "ts": 1712448420000,
+    "ekuitas": 100000000,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-08",
+    "ts": 1712520420000,
+    "ekuitas": 99913161,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-09",
+    "ts": 1712606820000,
+    "ekuitas": 100225070,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-10",
+    "ts": 1712693220000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-11",
+    "ts": 1712779620000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-12",
+    "ts": 1712866020000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-13",
+    "ts": 1712952420000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-14",
+    "ts": 1713038820000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-15",
+    "ts": 1713125220000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-16",
+    "ts": 1713211620000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2024-04-17",
+    "ts": 1713298020000,
+    "ekuitas": 99897500,
+    "cash": 0,
+    "nilai_posisi": 0
+   },
+   {
+    "hari": "2026-11-04",
+    "ts": 1793769679610,
+    "waktu": "2026-11-04 12:21:19 WIB",
+    "ekuitas": 100000000,
+    "cash": 100000000,
+    "nilai_posisi": 0,
+    "posisi": {}
+   }
+  ],
+  "benchmark": {
+   "pair": "BTCIDR",
+   "close_awal": 1114188000.0,
+   "close_akhir": 1387063000.0,
+   "return_total": 0.24490929717426502,
+   "max_dd": -0.12052254054799783,
+   "kurva": [
+    [
+     "2024-04-07 07:00",
+     1.0
+    ],
+    [
+     "2024-04-07 11:00",
+     0.998079318750516
+    ],
+    [
+     "2024-04-07 15:00",
+     1.0
+    ],
+    [
+     "2024-04-07 19:00",
+     1.0026404879607391
+    ],
+    [
+     "2024-04-07 23:00",
+     0.9953445917565079
+    ],
+    [
+     "2024-04-08 03:00",
+     0.9974133629154146
+    ],
+    [
+     "2024-04-08 07:00",
+     0.9981304770828622
+    ],
+    [
+     "2024-04-08 11:00",
+     1.014190603381117
+    ],
+    [
+     "2024-04-08 15:00",
+     1.0344062222892367
+    ],
+    [
+     "2024-04-08 19:00",
+     1.0289439484180407
+    ],
+    [
+     "2024-04-08 23:00",
+     1.0290588302871688
+    ],
+    [
+     "2024-04-09 03:00",
+     1.0287312374572335
+    ],
+    [
+     "2024-04-09 07:00",
+     1.0255450606181362
+    ],
+    [
+     "2024-04-09 11:00",
+     1.0114666465623396
+    ],
+    [
+     "2024-04-09 15:00",
+     1.0174656341658679
+    ],
+    [
+     "2024-04-09 19:00",
+     0.9999964099415898
+    ],
+    [
+     "2024-04-09 23:00",
+     1.0052154573554912
+    ],
+    [
+     "2024-04-10 03:00",
+     1.0007278843426783
+    ],
+    [
+     "2024-04-10 07:00",
+     0.9997801089223721
+    ],
+    [
+     "2024-04-10 11:00",
+     1.0054389384915292
+    ],
+    [
+     "2024-04-10 15:00",
+     1.001446793539331
+    ],
+    [
+     "2024-04-10 19:00",
+     0.9967671524015695
+    ],
+    [
+     "2024-04-10 23:00",
+     1.0107549174825075
+    ],
+    [
+     "2024-04-11 03:00",
+     1.0213653351140024
+    ],
+    [
+     "2024-04-11 07:00",
+     1.0240937795057925
+    ],
+    [
+     "2024-04-11 11:00",
+     1.0249580860680603
+    ],
+    [
+     "2024-04-11 15:00",
+     1.014196885983335
+    ],
+    [
+     "2024-04-11 19:00",
+     1.019841355318851
+    ],
+    [
+     "2024-04-11 23:00",
+     1.022629933189013
+    ],
+    [
+     "2024-04-12 03:00",
+     1.0195981288615565
+    ],
+    [
+     "2024-04-12 07:00",
+     1.0294483516246808
+    ],
+    [
+     "2024-04-12 11:00",
+     1.0282878652435674
+    ],
+    [
+     "2024-04-12 15:00",
+     1.0300819969340902
+    ],
+    [
+     "2024-04-12 19:00",
+     1.0176585998054188
+    ],
+    [
+     "2024-04-12 23:00",
+     0.9923872811410641
+    ],
+    [
+     "2024-04-13 03:00",
+     0.9984060140658488
+    ],
+    [
+     "2024-04-13 07:00",
+     0.991753635831655
+    ],
+    [
+     "2024-04-13 11:00",
+     0.9964548173198778
+    ],
+    [
+     "2024-04-13 15:00",
+     0.9974968317734529
+    ],
+    [
+     "2024-04-13 19:00",
+     1.0002800245559995
+    ],
+    [
+     "2024-04-13 23:00",
+     0.9782909167932162
+    ],
+    [
+     "2024-04-14 03:00",
+     0.9733249684972375
+    ],
+    [
+     "2024-04-14 07:00",
+     0.9450828764984006
+    ],
+    [
+     "2024-04-14 11:00",
+     0.9657705880874682
+    ],
+    [
+     "2024-04-14 15:00",
+     0.9536101627373478
+    ],
+    [
+     "2024-04-14 19:00",
+     0.9504679641137761
+    ],
+    [
+     "2024-04-14 23:00",
+     0.9577351398507253
+    ],
+    [
+     "2024-04-15 03:00",
+     0.9813631092777879
+    ],
+    [
+     "2024-04-15 07:00",
+     0.9693480812932826
+    ],
+    [
+     "2024-04-15 11:00",
+     0.9804979052009176
+    ],
+    [
+     "2024-04-15 15:00",
+     0.9711107999727155
+    ],
+    [
+     "2024-04-15 19:00",
+     0.9509113363274421
+    ],
+    [
+     "2024-04-15 23:00",
+     0.9325051068580886
+    ],
+    [
+     "2024-04-16 03:00",
+     0.936140040998467
+    ],
+    [
+     "2024-04-16 07:00",
+     0.9289276136522742
+    ],
+    [
+     "2024-04-16 11:00",
+     0.9312826919693984
+    ],
+    [
+     "2024-04-16 15:00",
+     0.9253483254172545
+    ],
+    [
+     "2024-04-16 19:00",
+     0.909736956420281
+    ],
+    [
+     "2024-04-16 23:00",
+     0.9226593716679771
+    ],
+    [
+     "2024-04-17 03:00",
+     0.9370043475607348
+    ],
+    [
+     "2026-11-04 07:00",
+     1.244909297174265
+    ]
+   ]
+  },
+  "sinyal": [
+   {
+    "ts": 1712448420000,
+    "bar_time": 1712448000000,
+    "pair": "BTCIDR",
+    "close": 1114188000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712448420000,
+    "bar_time": 1712448000000,
+    "pair": "ETHIDR",
+    "close": 54510000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712448420000,
+    "bar_time": 1712448000000,
+    "pair": "XRPIDR",
+    "close": 9544.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712448420000,
+    "bar_time": 1712448000000,
+    "pair": "SOLIDR",
+    "close": 2908622.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712448420000,
+    "bar_time": 1712448000000,
+    "pair": "DOGEIDR",
+    "close": 3138.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712462820000,
+    "bar_time": 1712462400000,
+    "pair": "BTCIDR",
+    "close": 1112048000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712462820000,
+    "bar_time": 1712462400000,
+    "pair": "ETHIDR",
+    "close": 54384000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712462820000,
+    "bar_time": 1712462400000,
+    "pair": "XRPIDR",
+    "close": 9568.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712462820000,
+    "bar_time": 1712462400000,
+    "pair": "SOLIDR",
+    "close": 2884003.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712462820000,
+    "bar_time": 1712462400000,
+    "pair": "DOGEIDR",
+    "close": 3120.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712477220000,
+    "bar_time": 1712476800000,
+    "pair": "BTCIDR",
+    "close": 1114188000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712477220000,
+    "bar_time": 1712476800000,
+    "pair": "ETHIDR",
+    "close": 54495000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712477220000,
+    "bar_time": 1712476800000,
+    "pair": "XRPIDR",
+    "close": 9612.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712477220000,
+    "bar_time": 1712476800000,
+    "pair": "SOLIDR",
+    "close": 2905677.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712477220000,
+    "bar_time": 1712476800000,
+    "pair": "DOGEIDR",
+    "close": 3192.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712491620000,
+    "bar_time": 1712491200000,
+    "pair": "BTCIDR",
+    "close": 1117130000.0,
+    "sinyal": true
+   },
+   {
+    "ts": 1712491620000,
+    "bar_time": 1712491200000,
+    "pair": "ETHIDR",
+    "close": 54604000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712491620000,
+    "bar_time": 1712491200000,
+    "pair": "XRPIDR",
+    "close": 9605.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712491620000,
+    "bar_time": 1712491200000,
+    "pair": "SOLIDR",
+    "close": 2894800.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712491620000,
+    "bar_time": 1712491200000,
+    "pair": "DOGEIDR",
+    "close": 3221.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712506020000,
+    "bar_time": 1712505600000,
+    "pair": "BTCIDR",
+    "close": 1109001000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712506020000,
+    "bar_time": 1712505600000,
+    "pair": "ETHIDR",
+    "close": 54307000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712506020000,
+    "bar_time": 1712505600000,
+    "pair": "XRPIDR",
+    "close": 9501.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712506020000,
+    "bar_time": 1712505600000,
+    "pair": "SOLIDR",
+    "close": 2865433.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712506020000,
+    "bar_time": 1712505600000,
+    "pair": "DOGEIDR",
+    "close": 3158.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712520420000,
+    "bar_time": 1712520000000,
+    "pair": "BTCIDR",
+    "close": 1111306000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712520420000,
+    "bar_time": 1712520000000,
+    "pair": "ETHIDR",
+    "close": 55299000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712520420000,
+    "bar_time": 1712520000000,
+    "pair": "XRPIDR",
+    "close": 9534.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712520420000,
+    "bar_time": 1712520000000,
+    "pair": "SOLIDR",
+    "close": 2879612.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712520420000,
+    "bar_time": 1712520000000,
+    "pair": "DOGEIDR",
+    "close": 3193.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712534820000,
+    "bar_time": 1712534400000,
+    "pair": "BTCIDR",
+    "close": 1112105000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712534820000,
+    "bar_time": 1712534400000,
+    "pair": "ETHIDR",
+    "close": 54885000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712534820000,
+    "bar_time": 1712534400000,
+    "pair": "XRPIDR",
+    "close": 9500.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712534820000,
+    "bar_time": 1712534400000,
+    "pair": "SOLIDR",
+    "close": 2833761.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712534820000,
+    "bar_time": 1712534400000,
+    "pair": "DOGEIDR",
+    "close": 3185.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712549220000,
+    "bar_time": 1712548800000,
+    "pair": "BTCIDR",
+    "close": 1129999000.0,
+    "sinyal": true
+   },
+   {
+    "ts": 1712549220000,
+    "bar_time": 1712548800000,
+    "pair": "ETHIDR",
+    "close": 55549000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712549220000,
+    "bar_time": 1712548800000,
+    "pair": "XRPIDR",
+    "close": 9631.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712549220000,
+    "bar_time": 1712548800000,
+    "pair": "SOLIDR",
+    "close": 2887952.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712549220000,
+    "bar_time": 1712548800000,
+    "pair": "DOGEIDR",
+    "close": 3295.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712563620000,
+    "bar_time": 1712563200000,
+    "pair": "BTCIDR",
+    "close": 1152523000.0,
+    "sinyal": true
+   },
+   {
+    "ts": 1712563620000,
+    "bar_time": 1712563200000,
+    "pair": "ETHIDR",
+    "close": 57807000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712563620000,
+    "bar_time": 1712563200000,
+    "pair": "XRPIDR",
+    "close": 9708.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712563620000,
+    "bar_time": 1712563200000,
+    "pair": "SOLIDR",
+    "close": 2912975.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712563620000,
+    "bar_time": 1712563200000,
+    "pair": "DOGEIDR",
+    "close": 3300.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712578020000,
+    "bar_time": 1712577600000,
+    "pair": "BTCIDR",
+    "close": 1146437000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712578020000,
+    "bar_time": 1712577600000,
+    "pair": "ETHIDR",
+    "close": 57922000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712578020000,
+    "bar_time": 1712577600000,
+    "pair": "XRPIDR",
+    "close": 9821.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712578020000,
+    "bar_time": 1712577600000,
+    "pair": "SOLIDR",
+    "close": 2900280.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712578020000,
+    "bar_time": 1712577600000,
+    "pair": "DOGEIDR",
+    "close": 3242.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712592420000,
+    "bar_time": 1712592000000,
+    "pair": "BTCIDR",
+    "close": 1146565000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712592420000,
+    "bar_time": 1712592000000,
+    "pair": "ETHIDR",
+    "close": 58953000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712592420000,
+    "bar_time": 1712592000000,
+    "pair": "XRPIDR",
+    "close": 9988.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712592420000,
+    "bar_time": 1712592000000,
+    "pair": "SOLIDR",
+    "close": 2872629.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712592420000,
+    "bar_time": 1712592000000,
+    "pair": "DOGEIDR",
+    "close": 3223.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712606820000,
+    "bar_time": 1712606400000,
+    "pair": "BTCIDR",
+    "close": 1146200000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712606820000,
+    "bar_time": 1712606400000,
+    "pair": "ETHIDR",
+    "close": 59100000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712606820000,
+    "bar_time": 1712606400000,
+    "pair": "XRPIDR",
+    "close": 9854.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712606820000,
+    "bar_time": 1712606400000,
+    "pair": "SOLIDR",
+    "close": 2900000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712606820000,
+    "bar_time": 1712606400000,
+    "pair": "DOGEIDR",
+    "close": 3248.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712621220000,
+    "bar_time": 1712620800000,
+    "pair": "BTCIDR",
+    "close": 1142650000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712621220000,
+    "bar_time": 1712620800000,
+    "pair": "ETHIDR",
+    "close": 59036000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712621220000,
+    "bar_time": 1712620800000,
+    "pair": "XRPIDR",
+    "close": 9830.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712621220000,
+    "bar_time": 1712620800000,
+    "pair": "SOLIDR",
+    "close": 2851749.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712621220000,
+    "bar_time": 1712620800000,
+    "pair": "DOGEIDR",
+    "close": 3191.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712635620000,
+    "bar_time": 1712635200000,
+    "pair": "BTCIDR",
+    "close": 1126964000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712635620000,
+    "bar_time": 1712635200000,
+    "pair": "ETHIDR",
+    "close": 58200000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712635620000,
+    "bar_time": 1712635200000,
+    "pair": "XRPIDR",
+    "close": 9754.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712635620000,
+    "bar_time": 1712635200000,
+    "pair": "SOLIDR",
+    "close": 2810424.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712635620000,
+    "bar_time": 1712635200000,
+    "pair": "DOGEIDR",
+    "close": 3155.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712650020000,
+    "bar_time": 1712649600000,
+    "pair": "BTCIDR",
+    "close": 1133648000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712650020000,
+    "bar_time": 1712649600000,
+    "pair": "ETHIDR",
+    "close": 58129000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712650020000,
+    "bar_time": 1712649600000,
+    "pair": "XRPIDR",
+    "close": 9998.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712650020000,
+    "bar_time": 1712649600000,
+    "pair": "SOLIDR",
+    "close": 2823322.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712650020000,
+    "bar_time": 1712649600000,
+    "pair": "DOGEIDR",
+    "close": 3155.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712664420000,
+    "bar_time": 1712664000000,
+    "pair": "BTCIDR",
+    "close": 1114184000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712664420000,
+    "bar_time": 1712664000000,
+    "pair": "ETHIDR",
+    "close": 56769000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712664420000,
+    "bar_time": 1712664000000,
+    "pair": "XRPIDR",
+    "close": 10002.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712664420000,
+    "bar_time": 1712664000000,
+    "pair": "SOLIDR",
+    "close": 2766147.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712664420000,
+    "bar_time": 1712664000000,
+    "pair": "DOGEIDR",
+    "close": 3058.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712678820000,
+    "bar_time": 1712678400000,
+    "pair": "BTCIDR",
+    "close": 1119999000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712678820000,
+    "bar_time": 1712678400000,
+    "pair": "ETHIDR",
+    "close": 56794000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712678820000,
+    "bar_time": 1712678400000,
+    "pair": "XRPIDR",
+    "close": 10051.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712678820000,
+    "bar_time": 1712678400000,
+    "pair": "SOLIDR",
+    "close": 2807779.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712678820000,
+    "bar_time": 1712678400000,
+    "pair": "DOGEIDR",
+    "close": 3052.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712693220000,
+    "bar_time": 1712692800000,
+    "pair": "BTCIDR",
+    "close": 1114999000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712693220000,
+    "bar_time": 1712692800000,
+    "pair": "ETHIDR",
+    "close": 56547000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712693220000,
+    "bar_time": 1712692800000,
+    "pair": "XRPIDR",
+    "close": 9892.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712693220000,
+    "bar_time": 1712692800000,
+    "pair": "SOLIDR",
+    "close": 2783846.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712693220000,
+    "bar_time": 1712692800000,
+    "pair": "DOGEIDR",
+    "close": 3045.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712707620000,
+    "bar_time": 1712707200000,
+    "pair": "BTCIDR",
+    "close": 1113943000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712707620000,
+    "bar_time": 1712707200000,
+    "pair": "ETHIDR",
+    "close": 56751000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712707620000,
+    "bar_time": 1712707200000,
+    "pair": "XRPIDR",
+    "close": 9795.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712707620000,
+    "bar_time": 1712707200000,
+    "pair": "SOLIDR",
+    "close": 2769488.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712707620000,
+    "bar_time": 1712707200000,
+    "pair": "DOGEIDR",
+    "close": 3040.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712722020000,
+    "bar_time": 1712721600000,
+    "pair": "BTCIDR",
+    "close": 1120248000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712722020000,
+    "bar_time": 1712721600000,
+    "pair": "ETHIDR",
+    "close": 57157000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712722020000,
+    "bar_time": 1712721600000,
+    "pair": "XRPIDR",
+    "close": 9925.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712722020000,
+    "bar_time": 1712721600000,
+    "pair": "SOLIDR",
+    "close": 2790000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712722020000,
+    "bar_time": 1712721600000,
+    "pair": "DOGEIDR",
+    "close": 3081.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712736420000,
+    "bar_time": 1712736000000,
+    "pair": "BTCIDR",
+    "close": 1115800000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712736420000,
+    "bar_time": 1712736000000,
+    "pair": "ETHIDR",
+    "close": 56853000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712736420000,
+    "bar_time": 1712736000000,
+    "pair": "XRPIDR",
+    "close": 9894.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712736420000,
+    "bar_time": 1712736000000,
+    "pair": "SOLIDR",
+    "close": 2748082.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712736420000,
+    "bar_time": 1712736000000,
+    "pair": "DOGEIDR",
+    "close": 3053.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712750820000,
+    "bar_time": 1712750400000,
+    "pair": "BTCIDR",
+    "close": 1110586000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712750820000,
+    "bar_time": 1712750400000,
+    "pair": "ETHIDR",
+    "close": 56285000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712750820000,
+    "bar_time": 1712750400000,
+    "pair": "XRPIDR",
+    "close": 9832.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712750820000,
+    "bar_time": 1712750400000,
+    "pair": "SOLIDR",
+    "close": 2718844.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712750820000,
+    "bar_time": 1712750400000,
+    "pair": "DOGEIDR",
+    "close": 3128.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712765220000,
+    "bar_time": 1712764800000,
+    "pair": "BTCIDR",
+    "close": 1126171000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712765220000,
+    "bar_time": 1712764800000,
+    "pair": "ETHIDR",
+    "close": 56828000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712765220000,
+    "bar_time": 1712764800000,
+    "pair": "XRPIDR",
+    "close": 9972.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712765220000,
+    "bar_time": 1712764800000,
+    "pair": "SOLIDR",
+    "close": 2754403.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712765220000,
+    "bar_time": 1712764800000,
+    "pair": "DOGEIDR",
+    "close": 3239.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712779620000,
+    "bar_time": 1712779200000,
+    "pair": "BTCIDR",
+    "close": 1137993000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712779620000,
+    "bar_time": 1712779200000,
+    "pair": "ETHIDR",
+    "close": 57133000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712779620000,
+    "bar_time": 1712779200000,
+    "pair": "XRPIDR",
+    "close": 9944.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712779620000,
+    "bar_time": 1712779200000,
+    "pair": "SOLIDR",
+    "close": 2790199.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712779620000,
+    "bar_time": 1712779200000,
+    "pair": "DOGEIDR",
+    "close": 3221.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712794020000,
+    "bar_time": 1712793600000,
+    "pair": "BTCIDR",
+    "close": 1141033000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712794020000,
+    "bar_time": 1712793600000,
+    "pair": "ETHIDR",
+    "close": 57550000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712794020000,
+    "bar_time": 1712793600000,
+    "pair": "XRPIDR",
+    "close": 9992.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712794020000,
+    "bar_time": 1712793600000,
+    "pair": "SOLIDR",
+    "close": 2785306.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712794020000,
+    "bar_time": 1712793600000,
+    "pair": "DOGEIDR",
+    "close": 3178.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712808420000,
+    "bar_time": 1712808000000,
+    "pair": "BTCIDR",
+    "close": 1141996000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712808420000,
+    "bar_time": 1712808000000,
+    "pair": "ETHIDR",
+    "close": 57979000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712808420000,
+    "bar_time": 1712808000000,
+    "pair": "XRPIDR",
+    "close": 10023.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712808420000,
+    "bar_time": 1712808000000,
+    "pair": "SOLIDR",
+    "close": 2827905.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712808420000,
+    "bar_time": 1712808000000,
+    "pair": "DOGEIDR",
+    "close": 3240.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712822820000,
+    "bar_time": 1712822400000,
+    "pair": "BTCIDR",
+    "close": 1130006000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712822820000,
+    "bar_time": 1712822400000,
+    "pair": "ETHIDR",
+    "close": 56949000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712822820000,
+    "bar_time": 1712822400000,
+    "pair": "XRPIDR",
+    "close": 9852.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712822820000,
+    "bar_time": 1712822400000,
+    "pair": "SOLIDR",
+    "close": 2750601.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712822820000,
+    "bar_time": 1712822400000,
+    "pair": "DOGEIDR",
+    "close": 3134.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712837220000,
+    "bar_time": 1712836800000,
+    "pair": "BTCIDR",
+    "close": 1136295000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712837220000,
+    "bar_time": 1712836800000,
+    "pair": "ETHIDR",
+    "close": 56929000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712837220000,
+    "bar_time": 1712836800000,
+    "pair": "XRPIDR",
+    "close": 9860.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712837220000,
+    "bar_time": 1712836800000,
+    "pair": "SOLIDR",
+    "close": 2811106.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712837220000,
+    "bar_time": 1712836800000,
+    "pair": "DOGEIDR",
+    "close": 3121.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712851620000,
+    "bar_time": 1712851200000,
+    "pair": "BTCIDR",
+    "close": 1139402000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712851620000,
+    "bar_time": 1712851200000,
+    "pair": "ETHIDR",
+    "close": 56907000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712851620000,
+    "bar_time": 1712851200000,
+    "pair": "XRPIDR",
+    "close": 9898.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712851620000,
+    "bar_time": 1712851200000,
+    "pair": "SOLIDR",
+    "close": 2831697.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712851620000,
+    "bar_time": 1712851200000,
+    "pair": "DOGEIDR",
+    "close": 3131.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712866020000,
+    "bar_time": 1712865600000,
+    "pair": "BTCIDR",
+    "close": 1136024000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712866020000,
+    "bar_time": 1712865600000,
+    "pair": "ETHIDR",
+    "close": 56877000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712866020000,
+    "bar_time": 1712865600000,
+    "pair": "XRPIDR",
+    "close": 9879.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712866020000,
+    "bar_time": 1712865600000,
+    "pair": "SOLIDR",
+    "close": 2794633.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712866020000,
+    "bar_time": 1712865600000,
+    "pair": "DOGEIDR",
+    "close": 3149.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712880420000,
+    "bar_time": 1712880000000,
+    "pair": "BTCIDR",
+    "close": 1146999000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712880420000,
+    "bar_time": 1712880000000,
+    "pair": "ETHIDR",
+    "close": 57188000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712880420000,
+    "bar_time": 1712880000000,
+    "pair": "XRPIDR",
+    "close": 9894.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712880420000,
+    "bar_time": 1712880000000,
+    "pair": "SOLIDR",
+    "close": 2812215.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712880420000,
+    "bar_time": 1712880000000,
+    "pair": "DOGEIDR",
+    "close": 3200.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712894820000,
+    "bar_time": 1712894400000,
+    "pair": "BTCIDR",
+    "close": 1145706000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712894820000,
+    "bar_time": 1712894400000,
+    "pair": "ETHIDR",
+    "close": 57011000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712894820000,
+    "bar_time": 1712894400000,
+    "pair": "XRPIDR",
+    "close": 9900.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712894820000,
+    "bar_time": 1712894400000,
+    "pair": "SOLIDR",
+    "close": 2801462.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712894820000,
+    "bar_time": 1712894400000,
+    "pair": "DOGEIDR",
+    "close": 3197.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712909220000,
+    "bar_time": 1712908800000,
+    "pair": "BTCIDR",
+    "close": 1147705000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712909220000,
+    "bar_time": 1712908800000,
+    "pair": "ETHIDR",
+    "close": 57276000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712909220000,
+    "bar_time": 1712908800000,
+    "pair": "XRPIDR",
+    "close": 9868.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712909220000,
+    "bar_time": 1712908800000,
+    "pair": "SOLIDR",
+    "close": 2793682.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712909220000,
+    "bar_time": 1712908800000,
+    "pair": "DOGEIDR",
+    "close": 3236.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712923620000,
+    "bar_time": 1712923200000,
+    "pair": "BTCIDR",
+    "close": 1133863000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712923620000,
+    "bar_time": 1712923200000,
+    "pair": "ETHIDR",
+    "close": 56166000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712923620000,
+    "bar_time": 1712923200000,
+    "pair": "XRPIDR",
+    "close": 9693.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712923620000,
+    "bar_time": 1712923200000,
+    "pair": "SOLIDR",
+    "close": 2740255.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712923620000,
+    "bar_time": 1712923200000,
+    "pair": "DOGEIDR",
+    "close": 3154.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712938020000,
+    "bar_time": 1712937600000,
+    "pair": "BTCIDR",
+    "close": 1105706000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712938020000,
+    "bar_time": 1712937600000,
+    "pair": "ETHIDR",
+    "close": 52856000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712938020000,
+    "bar_time": 1712937600000,
+    "pair": "XRPIDR",
+    "close": 8856.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712938020000,
+    "bar_time": 1712937600000,
+    "pair": "SOLIDR",
+    "close": 2467000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712938020000,
+    "bar_time": 1712937600000,
+    "pair": "DOGEIDR",
+    "close": 2823.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712952420000,
+    "bar_time": 1712952000000,
+    "pair": "BTCIDR",
+    "close": 1112412000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712952420000,
+    "bar_time": 1712952000000,
+    "pair": "ETHIDR",
+    "close": 53671000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712952420000,
+    "bar_time": 1712952000000,
+    "pair": "XRPIDR",
+    "close": 9068.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712952420000,
+    "bar_time": 1712952000000,
+    "pair": "SOLIDR",
+    "close": 2543584.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712952420000,
+    "bar_time": 1712952000000,
+    "pair": "DOGEIDR",
+    "close": 2887.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712966820000,
+    "bar_time": 1712966400000,
+    "pair": "BTCIDR",
+    "close": 1105000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712966820000,
+    "bar_time": 1712966400000,
+    "pair": "ETHIDR",
+    "close": 53370000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712966820000,
+    "bar_time": 1712966400000,
+    "pair": "XRPIDR",
+    "close": 8970.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712966820000,
+    "bar_time": 1712966400000,
+    "pair": "SOLIDR",
+    "close": 2505010.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712966820000,
+    "bar_time": 1712966400000,
+    "pair": "DOGEIDR",
+    "close": 2855.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712981220000,
+    "bar_time": 1712980800000,
+    "pair": "BTCIDR",
+    "close": 1110238000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712981220000,
+    "bar_time": 1712980800000,
+    "pair": "ETHIDR",
+    "close": 53698000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712981220000,
+    "bar_time": 1712980800000,
+    "pair": "XRPIDR",
+    "close": 8967.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712981220000,
+    "bar_time": 1712980800000,
+    "pair": "SOLIDR",
+    "close": 2495000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712981220000,
+    "bar_time": 1712980800000,
+    "pair": "DOGEIDR",
+    "close": 2824.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712995620000,
+    "bar_time": 1712995200000,
+    "pair": "BTCIDR",
+    "close": 1111399000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712995620000,
+    "bar_time": 1712995200000,
+    "pair": "ETHIDR",
+    "close": 54077000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712995620000,
+    "bar_time": 1712995200000,
+    "pair": "XRPIDR",
+    "close": 8974.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712995620000,
+    "bar_time": 1712995200000,
+    "pair": "SOLIDR",
+    "close": 2509072.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1712995620000,
+    "bar_time": 1712995200000,
+    "pair": "DOGEIDR",
+    "close": 2839.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713010020000,
+    "bar_time": 1713009600000,
+    "pair": "BTCIDR",
+    "close": 1114500000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713010020000,
+    "bar_time": 1713009600000,
+    "pair": "ETHIDR",
+    "close": 54093000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713010020000,
+    "bar_time": 1713009600000,
+    "pair": "XRPIDR",
+    "close": 8983.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713010020000,
+    "bar_time": 1713009600000,
+    "pair": "SOLIDR",
+    "close": 2466637.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713010020000,
+    "bar_time": 1713009600000,
+    "pair": "DOGEIDR",
+    "close": 2817.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713024420000,
+    "bar_time": 1713024000000,
+    "pair": "BTCIDR",
+    "close": 1090000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713024420000,
+    "bar_time": 1713024000000,
+    "pair": "ETHIDR",
+    "close": 51234000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713024420000,
+    "bar_time": 1713024000000,
+    "pair": "XRPIDR",
+    "close": 8400.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713024420000,
+    "bar_time": 1713024000000,
+    "pair": "SOLIDR",
+    "close": 2218513.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713024420000,
+    "bar_time": 1713024000000,
+    "pair": "DOGEIDR",
+    "close": 2550.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713038820000,
+    "bar_time": 1713038400000,
+    "pair": "BTCIDR",
+    "close": 1084467000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713038820000,
+    "bar_time": 1713038400000,
+    "pair": "ETHIDR",
+    "close": 51062000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713038820000,
+    "bar_time": 1713038400000,
+    "pair": "XRPIDR",
+    "close": 8153.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713038820000,
+    "bar_time": 1713038400000,
+    "pair": "SOLIDR",
+    "close": 2337427.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713038820000,
+    "bar_time": 1713038400000,
+    "pair": "DOGEIDR",
+    "close": 2588.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713053220000,
+    "bar_time": 1713052800000,
+    "pair": "BTCIDR",
+    "close": 1053000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713053220000,
+    "bar_time": 1713052800000,
+    "pair": "ETHIDR",
+    "close": 49277000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713053220000,
+    "bar_time": 1713052800000,
+    "pair": "XRPIDR",
+    "close": 7809.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713053220000,
+    "bar_time": 1713052800000,
+    "pair": "SOLIDR",
+    "close": 2236626.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713053220000,
+    "bar_time": 1713052800000,
+    "pair": "DOGEIDR",
+    "close": 2485.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713067620000,
+    "bar_time": 1713067200000,
+    "pair": "BTCIDR",
+    "close": 1076050000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713067620000,
+    "bar_time": 1713067200000,
+    "pair": "ETHIDR",
+    "close": 51455000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713067620000,
+    "bar_time": 1713067200000,
+    "pair": "XRPIDR",
+    "close": 8257.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713067620000,
+    "bar_time": 1713067200000,
+    "pair": "SOLIDR",
+    "close": 2402779.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713067620000,
+    "bar_time": 1713067200000,
+    "pair": "DOGEIDR",
+    "close": 2647.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713082020000,
+    "bar_time": 1713081600000,
+    "pair": "BTCIDR",
+    "close": 1062501000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713082020000,
+    "bar_time": 1713081600000,
+    "pair": "ETHIDR",
+    "close": 50389000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713082020000,
+    "bar_time": 1713081600000,
+    "pair": "XRPIDR",
+    "close": 8023.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713082020000,
+    "bar_time": 1713081600000,
+    "pair": "SOLIDR",
+    "close": 2307023.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713082020000,
+    "bar_time": 1713081600000,
+    "pair": "DOGEIDR",
+    "close": 2523.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713096420000,
+    "bar_time": 1713096000000,
+    "pair": "BTCIDR",
+    "close": 1059000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713096420000,
+    "bar_time": 1713096000000,
+    "pair": "ETHIDR",
+    "close": 50469000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713096420000,
+    "bar_time": 1713096000000,
+    "pair": "XRPIDR",
+    "close": 8065.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713096420000,
+    "bar_time": 1713096000000,
+    "pair": "SOLIDR",
+    "close": 2273001.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713096420000,
+    "bar_time": 1713096000000,
+    "pair": "DOGEIDR",
+    "close": 2499.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713110820000,
+    "bar_time": 1713110400000,
+    "pair": "BTCIDR",
+    "close": 1067097000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713110820000,
+    "bar_time": 1713110400000,
+    "pair": "ETHIDR",
+    "close": 51242000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713110820000,
+    "bar_time": 1713110400000,
+    "pair": "XRPIDR",
+    "close": 8144.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713110820000,
+    "bar_time": 1713110400000,
+    "pair": "SOLIDR",
+    "close": 2353992.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713110820000,
+    "bar_time": 1713110400000,
+    "pair": "DOGEIDR",
+    "close": 2540.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713125220000,
+    "bar_time": 1713124800000,
+    "pair": "BTCIDR",
+    "close": 1093423000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713125220000,
+    "bar_time": 1713124800000,
+    "pair": "ETHIDR",
+    "close": 52520000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713125220000,
+    "bar_time": 1713124800000,
+    "pair": "XRPIDR",
+    "close": 8392.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713125220000,
+    "bar_time": 1713124800000,
+    "pair": "SOLIDR",
+    "close": 2515233.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713125220000,
+    "bar_time": 1713124800000,
+    "pair": "DOGEIDR",
+    "close": 2698.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713139620000,
+    "bar_time": 1713139200000,
+    "pair": "BTCIDR",
+    "close": 1080036000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713139620000,
+    "bar_time": 1713139200000,
+    "pair": "ETHIDR",
+    "close": 52220000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713139620000,
+    "bar_time": 1713139200000,
+    "pair": "XRPIDR",
+    "close": 8258.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713139620000,
+    "bar_time": 1713139200000,
+    "pair": "SOLIDR",
+    "close": 2459322.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713139620000,
+    "bar_time": 1713139200000,
+    "pair": "DOGEIDR",
+    "close": 2616.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713154020000,
+    "bar_time": 1713153600000,
+    "pair": "BTCIDR",
+    "close": 1092459000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713154020000,
+    "bar_time": 1713153600000,
+    "pair": "ETHIDR",
+    "close": 53485000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713154020000,
+    "bar_time": 1713153600000,
+    "pair": "XRPIDR",
+    "close": 8476.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713154020000,
+    "bar_time": 1713153600000,
+    "pair": "SOLIDR",
+    "close": 2546248.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713154020000,
+    "bar_time": 1713153600000,
+    "pair": "DOGEIDR",
+    "close": 2724.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713168420000,
+    "bar_time": 1713168000000,
+    "pair": "BTCIDR",
+    "close": 1082000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713168420000,
+    "bar_time": 1713168000000,
+    "pair": "ETHIDR",
+    "close": 53111000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713168420000,
+    "bar_time": 1713168000000,
+    "pair": "XRPIDR",
+    "close": 8428.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713168420000,
+    "bar_time": 1713168000000,
+    "pair": "SOLIDR",
+    "close": 2487672.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713168420000,
+    "bar_time": 1713168000000,
+    "pair": "DOGEIDR",
+    "close": 2667.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713182820000,
+    "bar_time": 1713182400000,
+    "pair": "BTCIDR",
+    "close": 1059494000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713182820000,
+    "bar_time": 1713182400000,
+    "pair": "ETHIDR",
+    "close": 51913000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713182820000,
+    "bar_time": 1713182400000,
+    "pair": "XRPIDR",
+    "close": 8161.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713182820000,
+    "bar_time": 1713182400000,
+    "pair": "SOLIDR",
+    "close": 2347552.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713182820000,
+    "bar_time": 1713182400000,
+    "pair": "DOGEIDR",
+    "close": 2525.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713197220000,
+    "bar_time": 1713196800000,
+    "pair": "BTCIDR",
+    "close": 1038986000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713197220000,
+    "bar_time": 1713196800000,
+    "pair": "ETHIDR",
+    "close": 50776000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713197220000,
+    "bar_time": 1713196800000,
+    "pair": "XRPIDR",
+    "close": 8147.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713197220000,
+    "bar_time": 1713196800000,
+    "pair": "SOLIDR",
+    "close": 2267036.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713197220000,
+    "bar_time": 1713196800000,
+    "pair": "DOGEIDR",
+    "close": 2609.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713211620000,
+    "bar_time": 1713211200000,
+    "pair": "BTCIDR",
+    "close": 1043036000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713211620000,
+    "bar_time": 1713211200000,
+    "pair": "ETHIDR",
+    "close": 50924000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713211620000,
+    "bar_time": 1713211200000,
+    "pair": "XRPIDR",
+    "close": 8176.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713211620000,
+    "bar_time": 1713211200000,
+    "pair": "SOLIDR",
+    "close": 2274600.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713211620000,
+    "bar_time": 1713211200000,
+    "pair": "DOGEIDR",
+    "close": 2648.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713226020000,
+    "bar_time": 1713225600000,
+    "pair": "BTCIDR",
+    "close": 1035000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713226020000,
+    "bar_time": 1713225600000,
+    "pair": "ETHIDR",
+    "close": 50433000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713226020000,
+    "bar_time": 1713225600000,
+    "pair": "XRPIDR",
+    "close": 8033.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713226020000,
+    "bar_time": 1713225600000,
+    "pair": "SOLIDR",
+    "close": 2213010.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713226020000,
+    "bar_time": 1713225600000,
+    "pair": "DOGEIDR",
+    "close": 2559.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713240420000,
+    "bar_time": 1713240000000,
+    "pair": "BTCIDR",
+    "close": 1037624000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713240420000,
+    "bar_time": 1713240000000,
+    "pair": "ETHIDR",
+    "close": 50698000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713240420000,
+    "bar_time": 1713240000000,
+    "pair": "XRPIDR",
+    "close": 8120.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713240420000,
+    "bar_time": 1713240000000,
+    "pair": "SOLIDR",
+    "close": 2256685.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713240420000,
+    "bar_time": 1713240000000,
+    "pair": "DOGEIDR",
+    "close": 2564.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713254820000,
+    "bar_time": 1713254400000,
+    "pair": "BTCIDR",
+    "close": 1031012000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713254820000,
+    "bar_time": 1713254400000,
+    "pair": "ETHIDR",
+    "close": 50463000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713254820000,
+    "bar_time": 1713254400000,
+    "pair": "XRPIDR",
+    "close": 8027.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713254820000,
+    "bar_time": 1713254400000,
+    "pair": "SOLIDR",
+    "close": 2217416.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713254820000,
+    "bar_time": 1713254400000,
+    "pair": "DOGEIDR",
+    "close": 2547.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713269220000,
+    "bar_time": 1713268800000,
+    "pair": "BTCIDR",
+    "close": 1013618000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713269220000,
+    "bar_time": 1713268800000,
+    "pair": "ETHIDR",
+    "close": 49371000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713269220000,
+    "bar_time": 1713268800000,
+    "pair": "XRPIDR",
+    "close": 7993.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713269220000,
+    "bar_time": 1713268800000,
+    "pair": "SOLIDR",
+    "close": 2097000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713269220000,
+    "bar_time": 1713268800000,
+    "pair": "DOGEIDR",
+    "close": 2430.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713283620000,
+    "bar_time": 1713283200000,
+    "pair": "BTCIDR",
+    "close": 1028016000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713283620000,
+    "bar_time": 1713283200000,
+    "pair": "ETHIDR",
+    "close": 50000000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713283620000,
+    "bar_time": 1713283200000,
+    "pair": "XRPIDR",
+    "close": 8059.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713283620000,
+    "bar_time": 1713283200000,
+    "pair": "SOLIDR",
+    "close": 2161810.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713283620000,
+    "bar_time": 1713283200000,
+    "pair": "DOGEIDR",
+    "close": 2509.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713298020000,
+    "bar_time": 1713297600000,
+    "pair": "BTCIDR",
+    "close": 1043999000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713298020000,
+    "bar_time": 1713297600000,
+    "pair": "ETHIDR",
+    "close": 50537000.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713298020000,
+    "bar_time": 1713297600000,
+    "pair": "XRPIDR",
+    "close": 8135.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713298020000,
+    "bar_time": 1713297600000,
+    "pair": "SOLIDR",
+    "close": 2234045.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1713298020000,
+    "bar_time": 1713297600000,
+    "pair": "DOGEIDR",
+    "close": 2555.0,
+    "sinyal": false
+   },
+   {
+    "ts": 1793769679610,
+    "bar_time": 1793750400000,
+    "pair": "BTCIDR",
+    "close": 1387063000.0,
+    "ma20": 1407045200.0,
+    "ma50": 1431137380.0,
+    "ma200": 1472085055.0,
+    "atr": 13325428.57142857,
+    "adv": 4169603391.1339774,
+    "hh": 1429999000.0,
+    "sinyal": false,
+    "dieksekusi": false
+   },
+   {
+    "ts": 1793769679610,
+    "bar_time": 1793750400000,
+    "pair": "ETHIDR",
+    "close": 40781000.0,
+    "ma20": 41154100.0,
+    "ma50": 41494000.0,
+    "ma200": 43989080.0,
+    "atr": 508571.4285714286,
+    "adv": 865056745.4525421,
+    "hh": 42000000.0,
+    "sinyal": false,
+    "dieksekusi": false
+   },
+   {
+    "ts": 1793769679610,
+    "bar_time": 1793750400000,
+    "pair": "XRPIDR",
+    "close": 22795.0,
+    "ma20": 22774.8,
+    "ma50": 23156.14,
+    "ma200": 24295.77,
+    "atr": 276.7857142857143,
+    "adv": 633072909.6684238,
+    "hh": 23409.0,
+    "sinyal": false,
+    "dieksekusi": false
+   },
+   {
+    "ts": 1793769679610,
+    "bar_time": 1793750400000,
+    "pair": "SOLIDR",
+    "close": 1651871.0,
+    "ma20": 1699301.45,
+    "ma50": 1757784.7,
+    "ma200": 1910595.005,
+    "atr": 27898.5,
+    "adv": 854672035.8024191,
+    "hh": 1744000.0,
+    "sinyal": false,
+    "dieksekusi": false
+   },
+   {
+    "ts": 1793769679610,
+    "bar_time": 1793750400000,
+    "pair": "DOGEIDR",
+    "close": 1329.0,
+    "ma20": 1360.4,
+    "ma50": 1387.36,
+    "ma200": 1483.77,
+    "atr": 20.785714285714285,
+    "adv": 164097530.22835058,
+    "hh": 1385.0,
+    "sinyal": false,
+    "dieksekusi": false
+   }
+  ],
+  "bar": [
+   1712448000000,
+   1712462400000,
+   1712476800000,
+   1712491200000,
+   1712505600000,
+   1712520000000,
+   1712534400000,
+   1712548800000,
+   1712563200000,
+   1712577600000,
+   1712592000000,
+   1712606400000,
+   1712620800000,
+   1712635200000,
+   1712649600000,
+   1712664000000,
+   1712678400000,
+   1712692800000,
+   1712707200000,
+   1712721600000,
+   1712736000000,
+   1712750400000,
+   1712764800000,
+   1712779200000,
+   1712793600000,
+   1712808000000,
+   1712822400000,
+   1712836800000,
+   1712851200000,
+   1712865600000,
+   1712880000000,
+   1712894400000,
+   1712908800000,
+   1712923200000,
+   1712937600000,
+   1712952000000,
+   1712966400000,
+   1712980800000,
+   1712995200000,
+   1713009600000,
+   1713024000000,
+   1713038400000,
+   1713052800000,
+   1713067200000,
+   1713081600000,
+   1713096000000,
+   1713110400000,
+   1713124800000,
+   1713139200000,
+   1713153600000,
+   1713168000000,
+   1713182400000,
+   1713196800000,
+   1713211200000,
+   1713225600000,
+   1713240000000,
+   1713254400000,
+   1713268800000,
+   1713283200000,
+   1713297600000,
+   1793750400000
+  ]
+ },
+ "backtest_jendela": {
+  "modal": 100000000,
+  "trades": [],
+  "biaya": {
+   "fee_beli": 0.0020555,
+   "fee_jual": 0.0041555,
+   "spread_median_bps": {
+    "BTCIDR": 14.235,
+    "ETHIDR": 10.657,
+    "XRPIDR": 3.475,
+    "SOLIDR": 12.825,
+    "DOGEIDR": 14.881
+   },
+   "slippage_median_bps": {
+    "BTCIDR": 0.0,
+    "ETHIDR": 0.0,
+    "XRPIDR": 0.512,
+    "SOLIDR": 0.0,
+    "DOGEIDR": 0.0
+   },
+   "sampel_biaya": {
+    "BTCIDR": {
+     "n": 51,
+     "spread_bps": 14.235,
+     "slippage_bps": 0.0
+    },
+    "ETHIDR": {
+     "n": 51,
+     "spread_bps": 10.657,
+     "slippage_bps": 0.0
+    },
+    "XRPIDR": {
+     "n": 51,
+     "spread_bps": 3.475,
+     "slippage_bps": 0.512
+    },
+    "SOLIDR": {
+     "n": 52,
+     "spread_bps": 12.825,
+     "slippage_bps": 0.0
+    },
+    "DOGEIDR": {
+     "n": 53,
+     "spread_bps": 14.881,
+     "slippage_bps": 0.0
+    }
+   },
+   "sumber_fee": "help.indodax.com Rincian Biaya Transaksi (all-in, efektif 1 Okt 2026), akses 4 Nov 2026",
+   "sumber_data": "https://indodax.com/tradingview/history_v2 (tf=240)"
+  },
+  "ekuitas": [
+   [
+    "2026-10-25",
+    1792944000,
+    100000000
+   ],
+   [
+    "2026-10-26",
+    1793030400,
+    100000000
+   ],
+   [
+    "2026-10-27",
+    1793116800,
+    100000000
+   ],
+   [
+    "2026-10-28",
+    1793203200,
+    100000000
+   ],
+   [
+    "2026-10-29",
+    1793289600,
+    100000000
+   ],
+   [
+    "2026-10-30",
+    1793376000,
+    100000000
+   ],
+   [
+    "2026-10-31",
+    1793462400,
+    100000000
+   ],
+   [
+    "2026-11-01",
+    1793548800,
+    100000000
+   ],
+   [
+    "2026-11-02",
+    1793635200,
+    100000000
+   ],
+   [
+    "2026-11-03",
+    1793721600,
+    100000000
+   ],
+   [
+    "2026-11-04",
+    1793764800,
+    100000000
+   ]
+  ]
+ },
+ "calls": [
+  {
+   "ts": 1712448420000,
+   "waktu": "2024-04-07 07:00 WIB",
+   "bar_time": 1712448000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100000000
+  },
+  {
+   "ts": 1712462820000,
+   "waktu": "2024-04-07 11:00 WIB",
+   "bar_time": 1712462400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100000000
+  },
+  {
+   "ts": 1712477220000,
+   "waktu": "2024-04-07 15:00 WIB",
+   "bar_time": 1712476800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100000000
+  },
+  {
+   "ts": 1712491620000,
+   "waktu": "2024-04-07 19:00 WIB",
+   "bar_time": 1712491200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100000000
+  },
+  {
+   "ts": 1712506020000,
+   "waktu": "2024-04-07 23:00 WIB",
+   "bar_time": 1712505600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99892557
+  },
+  {
+   "ts": 1712520420000,
+   "waktu": "2024-04-08 03:00 WIB",
+   "bar_time": 1712520000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99913161
+  },
+  {
+   "ts": 1712534820000,
+   "waktu": "2024-04-08 07:00 WIB",
+   "bar_time": 1712534400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99920303
+  },
+  {
+   "ts": 1712549220000,
+   "waktu": "2024-04-08 11:00 WIB",
+   "bar_time": 1712548800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100080253
+  },
+  {
+   "ts": 1712563620000,
+   "waktu": "2024-04-08 15:00 WIB",
+   "bar_time": 1712563200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100281590
+  },
+  {
+   "ts": 1712578020000,
+   "waktu": "2024-04-08 19:00 WIB",
+   "bar_time": 1712577600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100227189
+  },
+  {
+   "ts": 1712592420000,
+   "waktu": "2024-04-08 23:00 WIB",
+   "bar_time": 1712592000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100228333
+  },
+  {
+   "ts": 1712606820000,
+   "waktu": "2024-04-09 03:00 WIB",
+   "bar_time": 1712606400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100225070
+  },
+  {
+   "ts": 1712621220000,
+   "waktu": "2024-04-09 07:00 WIB",
+   "bar_time": 1712620800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100193338
+  },
+  {
+   "ts": 1712635620000,
+   "waktu": "2024-04-09 11:00 WIB",
+   "bar_time": 1712635200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100053124
+  },
+  {
+   "ts": 1712650020000,
+   "waktu": "2024-04-09 15:00 WIB",
+   "bar_time": 1712649600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 100112871
+  },
+  {
+   "ts": 1712664420000,
+   "waktu": "2024-04-09 19:00 WIB",
+   "bar_time": 1712664000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712678820000,
+   "waktu": "2024-04-09 23:00 WIB",
+   "bar_time": 1712678400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712693220000,
+   "waktu": "2024-04-10 03:00 WIB",
+   "bar_time": 1712692800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712707620000,
+   "waktu": "2024-04-10 07:00 WIB",
+   "bar_time": 1712707200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712722020000,
+   "waktu": "2024-04-10 11:00 WIB",
+   "bar_time": 1712721600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712736420000,
+   "waktu": "2024-04-10 15:00 WIB",
+   "bar_time": 1712736000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712750820000,
+   "waktu": "2024-04-10 19:00 WIB",
+   "bar_time": 1712750400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712765220000,
+   "waktu": "2024-04-10 23:00 WIB",
+   "bar_time": 1712764800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712779620000,
+   "waktu": "2024-04-11 03:00 WIB",
+   "bar_time": 1712779200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712794020000,
+   "waktu": "2024-04-11 07:00 WIB",
+   "bar_time": 1712793600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712808420000,
+   "waktu": "2024-04-11 11:00 WIB",
+   "bar_time": 1712808000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712822820000,
+   "waktu": "2024-04-11 15:00 WIB",
+   "bar_time": 1712822400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712837220000,
+   "waktu": "2024-04-11 19:00 WIB",
+   "bar_time": 1712836800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712851620000,
+   "waktu": "2024-04-11 23:00 WIB",
+   "bar_time": 1712851200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712866020000,
+   "waktu": "2024-04-12 03:00 WIB",
+   "bar_time": 1712865600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712880420000,
+   "waktu": "2024-04-12 07:00 WIB",
+   "bar_time": 1712880000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712894820000,
+   "waktu": "2024-04-12 11:00 WIB",
+   "bar_time": 1712894400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712909220000,
+   "waktu": "2024-04-12 15:00 WIB",
+   "bar_time": 1712908800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712923620000,
+   "waktu": "2024-04-12 19:00 WIB",
+   "bar_time": 1712923200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712938020000,
+   "waktu": "2024-04-12 23:00 WIB",
+   "bar_time": 1712937600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712952420000,
+   "waktu": "2024-04-13 03:00 WIB",
+   "bar_time": 1712952000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712966820000,
+   "waktu": "2024-04-13 07:00 WIB",
+   "bar_time": 1712966400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712981220000,
+   "waktu": "2024-04-13 11:00 WIB",
+   "bar_time": 1712980800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1712995620000,
+   "waktu": "2024-04-13 15:00 WIB",
+   "bar_time": 1712995200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713010020000,
+   "waktu": "2024-04-13 19:00 WIB",
+   "bar_time": 1713009600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713024420000,
+   "waktu": "2024-04-13 23:00 WIB",
+   "bar_time": 1713024000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713038820000,
+   "waktu": "2024-04-14 03:00 WIB",
+   "bar_time": 1713038400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713053220000,
+   "waktu": "2024-04-14 07:00 WIB",
+   "bar_time": 1713052800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713067620000,
+   "waktu": "2024-04-14 11:00 WIB",
+   "bar_time": 1713067200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713082020000,
+   "waktu": "2024-04-14 15:00 WIB",
+   "bar_time": 1713081600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713096420000,
+   "waktu": "2024-04-14 19:00 WIB",
+   "bar_time": 1713096000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713110820000,
+   "waktu": "2024-04-14 23:00 WIB",
+   "bar_time": 1713110400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713125220000,
+   "waktu": "2024-04-15 03:00 WIB",
+   "bar_time": 1713124800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713139620000,
+   "waktu": "2024-04-15 07:00 WIB",
+   "bar_time": 1713139200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713154020000,
+   "waktu": "2024-04-15 11:00 WIB",
+   "bar_time": 1713153600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713168420000,
+   "waktu": "2024-04-15 15:00 WIB",
+   "bar_time": 1713168000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713182820000,
+   "waktu": "2024-04-15 19:00 WIB",
+   "bar_time": 1713182400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713197220000,
+   "waktu": "2024-04-15 23:00 WIB",
+   "bar_time": 1713196800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713211620000,
+   "waktu": "2024-04-16 03:00 WIB",
+   "bar_time": 1713211200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713226020000,
+   "waktu": "2024-04-16 07:00 WIB",
+   "bar_time": 1713225600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713240420000,
+   "waktu": "2024-04-16 11:00 WIB",
+   "bar_time": 1713240000000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713254820000,
+   "waktu": "2024-04-16 15:00 WIB",
+   "bar_time": 1713254400000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713269220000,
+   "waktu": "2024-04-16 19:00 WIB",
+   "bar_time": 1713268800000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713283620000,
+   "waktu": "2024-04-16 23:00 WIB",
+   "bar_time": 1713283200000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1713298020000,
+   "waktu": "2024-04-17 03:00 WIB",
+   "bar_time": 1713297600000,
+   "sukses": true,
+   "order": 0,
+   "ekuitas": 99897500
+  },
+  {
+   "ts": 1793769679610,
+   "waktu": "2026-11-04 12:21:19 WIB",
+   "trigger": "uji-lokal",
+   "bar_time": 1793750400000,
+   "bar_wib": "2026-11-04 07:00:00 WIB",
+   "waktu_panggilan": "2026-11-04T05:21:20+00:00",
+   "sukses": true,
+   "ekuitas": 100000000,
+   "cash": 100000000,
+   "posisi": 0,
+   "order": 0,
+   "trade": 0,
+   "sinyal": 0,
+   "ditolak": {},
+   "beku": false,
+   "catatan": "ok",
+   "durasi_ms": 1942
+  },
+  {
+   "ts": 1793769681480,
+   "waktu": "2026-11-04 12:21:21 WIB",
+   "trigger": "uji-lokal",
+   "bar_time": 1793750400000,
+   "bar_wib": "2026-11-04 07:00:00 WIB",
+   "waktu_panggilan": "2026-11-04T05:21:22+00:00",
+   "sukses": true,
+   "idempoten": true,
+   "catatan": "candle 1793750400000 sudah diproses (last_bar_time=1793750400000)",
+   "durasi_ms": 154
+  },
+  {
+   "ts": 1793769681480,
+   "waktu": "2026-11-04 12:21:21 WIB",
+   "trigger": "uji-lokal",
+   "bar_time": 1793750400000,
+   "bar_wib": "2026-11-04 07:00:00 WIB",
+   "waktu_panggilan": "2026-11-04T05:21:22+00:00",
+   "sukses": true,
+   "catatan": "kill switch aktif: tidak ada order baru",
+   "kill_switch": true,
+   "dihentikan": true
+  }
+ ],
+ "errors": [
+  {
+   "ts": 1793769681480,
+   "waktu": "2026-11-04 12:21:21 WIB",
+   "jenis": "kill_switch",
+   "pesan": "tick dipanggil saat kill switch aktif"
+  }
+ ],
+ "biaya_forward": {
+  "fee": 20554.993183065097,
+  "spread_estimasi": 3556.2176818277912
+ }
+}

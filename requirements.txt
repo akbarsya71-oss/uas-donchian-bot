@@ -1,0 +1,2 @@
+# Satu-satunya dependency runtime bot (Python Serverless Function di Vercel).
+# Semua HTTP memakai urllib dari pustaka standar.
