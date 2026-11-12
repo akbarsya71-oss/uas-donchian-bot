@@ -1,7 +1,7 @@
 Bot dry run Indodax (UAS Algoritma Trading)
 
-Link Vercel : https://<isi-setelah-deploy>
-Repositori  : https://github.com/<username>/<repo>
+Link Vercel : https://uas-donchian-bot.vercel.app
+Repositori  : https://github.com/akbarsya71-oss/uas-donchian-bot
 
 Commit freeze : 3746eca (2026-11-04 13:28 WIB)
 Forward test  : mulai tick pertama setelah commit freeze, selesai 2026-11-14 12.00 WIB
