@@ -28,4 +28,4 @@ di bagian bawah berkas ini.
 
 | Waktu | Commit | Bug | Dampak pada aturan |
 |---|---|---|---|
-| — | — | belum ada | — |
+| 2026-11-12 | e21b413 | Entrypoint tunggal Vercel (api/main.py, pyproject.toml, vercel.json) + .vercelignore; tidak mengubah aturan strategi | tidak ada |
