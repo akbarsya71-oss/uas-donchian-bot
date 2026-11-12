@@ -1,0 +1,11 @@
+# Jangan ikut di-upload ke Vercel (runtime hanya butuh api/ + index.html + pyproject/vercel.json)
+local_state/
+forward/
+data/
+hasil_backtest.json
+backtest_forward.json
+angkadashboard.json
+kecocokan_sinyal.json
+dashboard.html
+*.pyc
+__pycache__/
