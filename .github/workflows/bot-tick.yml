@@ -7,7 +7,7 @@ name: bot-tick
 on:
   schedule:
     - cron: "7 0,4,8,12,16,20 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch: {}\n  push:\n    branches: [master]
 
 concurrency:
   group: bot-tick
