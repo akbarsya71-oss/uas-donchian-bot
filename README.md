@@ -56,7 +56,7 @@ set STORE=file && set CRON_SECRET=<nilai-rahasia-lokal> && python uji_server.py
 #   lalu: curl -H "Authorization: Bearer rahasia-uji" -X POST http://127.0.0.1:8765/api/tick
 
 # bangun dashboard dari log lokal
-python hitung_ulang.py --data forward/raw/uji-lokal.json
+python hitung_ulang.py --data forward/examples/uji-lokal.json
 
 # semua bahan sekaligus (setelah forward test)
 python selesai.py --url https://<app>.vercel.app/api/data
